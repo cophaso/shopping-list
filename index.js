@@ -21,6 +21,6 @@ $( function() {
     });
 
     $('.shopping-list').on('click', '.shopping-item-toggle', function(event){ 
-        console.log($(this).parent('.shopping-item-controls').siblings('.shopping-item').toggleClass('shopping-item__checked'));
+        $(this).parent('.shopping-item-controls').siblings('.shopping-item').toggleClass('shopping-item__checked');
     });
 })
